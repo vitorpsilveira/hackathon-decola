@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import { CardQuizService } from 'src/app/Services/card-quiz.service';
 
 @Component({
   selector: 'app-menu-pag-layout',
@@ -16,6 +17,6 @@ export class MenuPagLayoutComponent {
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver, public apiNome: CardQuizService) {}
 
 }
