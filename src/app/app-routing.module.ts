@@ -3,8 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { MenuPagLayoutComponent } from './components/menu-pag-layout/menu-pag-layout.component';
 import { SobrePageComponent } from './components/sobre-page/sobre-page.component';
 import { QuizPageComponent } from './components/quiz-page/quiz-page.component';
-import { InicioComponent } from './components/inicio/inicio.component';
 import { EsportesPageComponent } from './components/esportes-page/esportes-page.component';
+import { InicioComponent } from './components/inicio/inicio.component';
 
 
 const routes: Routes = [
