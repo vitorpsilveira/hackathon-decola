@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class CardQuizService {
 
-  nome:string = 'OlimpiQuiz';
+  nome:string = '';
   acertos: number = 0;
   erros: number = 0;
 
