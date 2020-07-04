@@ -7,10 +7,14 @@
   margin-top: 2%;
   max-width: 100%;
   width: 90%;
+  padding: 2px;
 }
 
-img {
+#CardQuiz img{
+  margin: 0;
+  width: 100%;
   border-style:solid;
+  border-width: 1px;
 }
 
 .example-radio-group {
