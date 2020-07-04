@@ -1,13 +1,13 @@
-<div id="CardQuiz">
+<div id="CardQuiz" style="background-color: black;">
   <mat-card class="example-card">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{Pais}}</mat-card-title>
       <mat-card-subtitle></mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image [src]="Bandeira" alt="Photo of a Shiba Inu">
+    <img mat-card-image [src]="Bandeira" alt="Bandeira">
     <mat-card-content>
-      <label id="example-radio-group-label">Quantas medalhas de {{Medalhas[EscolherMedalha()]}} o {{Pais}} obteve nas olimpadas?</label>
+      <label id="example-radio-group-label">Quantas medalhas de Ouro o {{Pais}} obteve nas olimpadas?</label>
       <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
         [(ngModel)]="Resposta">
         <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
