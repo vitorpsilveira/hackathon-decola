@@ -14,7 +14,7 @@
   margin: 0;
   width: 100%;
   border-style:solid;
-  border-width: 1px;
+  border-width: 0.1px;
 }
 
 .example-radio-group {
