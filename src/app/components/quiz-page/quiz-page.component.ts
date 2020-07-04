@@ -12,12 +12,17 @@ export class QuizPageComponent implements OnInit {
   listaquiz: CardQuiz[];
 
 
-  constructor(private quizApi: CardQuizService) { }
+
+  constructor(public quizApi: CardQuizService) { }
 
   ngOnInit(): void {
     this.quizApi.List().subscribe((lista) => {
       console.log(lista);
       this.listaquiz = lista;
+      this.quizApi.nome;
+      this.quizApi.acertos;
+      this.quizApi.erros;
+
     },
     (erro) => {
       console.log(erro);
@@ -32,6 +37,10 @@ export class QuizPageComponent implements OnInit {
   public numerosAleatorios() {
       var c = this.randomInt(0, 9);
       return c;
+  }
+
+  public FinalizaQuiz() {
+    alert("Quiz encerrado " + this.quizApi.nome + " você acertou " + this.quizApi.acertos + " pergunta(s) e errou " + this.quizApi.erros + " pergunta(s)");
   }
 
 }

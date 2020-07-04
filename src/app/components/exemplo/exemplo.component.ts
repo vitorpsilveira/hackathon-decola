@@ -40,18 +40,12 @@ export class ExemploComponent implements OnInit {
 
   public VerificaResposta() {
     if (this.Resposta == this.Ouro) {
-      alert("Resposta certa");
       this.apiResultados.acertos ++
     }
     else {
       this.apiResultados.erros ++
     }
   }
-
-  public FinalizaQuiz() {
-      alert("Quiz Encerrado: " + this.apiResultados.nome);
-    }
-
 
   public randomInt(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
