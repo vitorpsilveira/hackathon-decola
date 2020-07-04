@@ -25,6 +25,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { EsportesPageComponent } from './components/esportes-page/esportes-page.component';
 import {MatInputModule} from '@angular/material/input';
 
+
 registerLocaleData(localePt, 'pt-BR');
 
 @NgModule({

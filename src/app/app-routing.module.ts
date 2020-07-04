@@ -11,8 +11,8 @@ const routes: Routes = [
   {
     path: '', component: MenuPagLayoutComponent,
     children: [
-      { path: 'quiz', component: QuizPageComponent },
       { path: '', component: InicioComponent },
+      { path: 'quiz', component: QuizPageComponent },
       { path: 'sobre', component: SobrePageComponent },
       { path: 'esportes', component: EsportesPageComponent }
     ]
