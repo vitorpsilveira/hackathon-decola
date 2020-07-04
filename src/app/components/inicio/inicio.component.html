@@ -19,7 +19,7 @@
         <form class="example-form">
           <mat-form-field class="example-full-width">
             <mat-label>Informe seu nome</mat-label>
-            <input matInput>
+            <input matInput [(ngModel)]="nome">
           </mat-form-field>
           <br>
           <button mat-raised-button color="primary" routerLink="/quiz" >Iniciar Quiz</button>
