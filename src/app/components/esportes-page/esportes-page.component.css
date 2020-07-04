@@ -1,0 +1,24 @@
+#q1 div {
+  text-align: center;
+  height: 30vh;
+  font-family: Verdana;
+}
+
+.div1 {
+font-size: 24px;
+}
+
+.div1 p{
+font-family: 'Times New Roman';
+margin-top: 20px;
+font-size: 48px;
+}
+
+.div2 {
+ margin: 5px;
+}
+
+.div2 p {
+font-size:16px;
+}
+
