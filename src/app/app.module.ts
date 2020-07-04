@@ -20,6 +20,7 @@ import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import {MatRadioModule} from '@angular/material/radio';
+import { QuizPageComponent } from './components/quiz-page/quiz-page.component';
 
 registerLocaleData(localePt, 'pt-BR');
 
@@ -28,7 +29,8 @@ registerLocaleData(localePt, 'pt-BR');
     AppComponent,
     MenuPagLayoutComponent,
     ExemploComponent,
-    SobrePageComponent
+    SobrePageComponent,
+    QuizPageComponent
   ],
   imports: [
     BrowserModule,
