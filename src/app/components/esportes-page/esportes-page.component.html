@@ -1,14 +1,1 @@
-<div>
-  <div id="q1">
-    <div class="div1">
-      <br>
-        Teste
-        <p>OlympiQuiz</p>
-    </div>
-    <div class="div2">
-      <p>Teste</p>
-      A maior competição esportiva de 2020 adiou as medalhas de ouro pela saúde: a Olimpíada de Tóquio será oficialmente em 2021.
-      <br>
-      E por isso estamos aqui para relembrar um pouco do que aconteceu em competições anteriores, para não ficarmos sem um gostinho do que nos aguarda!
-    </div>
-  </div>
+<app-esportes-card *ngFor="let item of listaEsportes" [esportes]="item"></app-esportes-card>
