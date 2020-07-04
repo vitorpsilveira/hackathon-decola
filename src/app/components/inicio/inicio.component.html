@@ -16,10 +16,10 @@
 
 
       <mat-card>
-        <form class="example-form">
+        <form class="example-form" name="entrada">
           <mat-form-field class="example-full-width">
             <mat-label>Informe seu nome</mat-label>
-            <input matInput [(ngModel)]="nome">
+            <input matInput [(ngModel)]="apiNome.nome" name="nome">
           </mat-form-field>
           <br>
           <button mat-raised-button color="primary" routerLink="/quiz" >Iniciar Quiz</button>

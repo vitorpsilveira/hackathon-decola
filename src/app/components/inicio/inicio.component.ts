@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CardQuizService } from 'src/app/Services/card-quiz.service';
 
 @Component({
   selector: 'app-inicio',
@@ -7,9 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  nome:string = '';
-
-  constructor() { }
+  constructor(public apiNome: CardQuizService) { }
 
   ngOnInit(): void {
   }
