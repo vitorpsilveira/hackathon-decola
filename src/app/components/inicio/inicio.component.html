@@ -1,8 +1,8 @@
 <div>
   <div id="q1">
       <div class="div1">
-        Bem-vindo ao
-        <p>OlympiQuiz</p>
+        <p>Bem-vindo ao</p>
+        <h1>OlimpiQuiz</h1>
       </div>
     <div class="div2">
       <p>Olimpíada é adiada pela primeira vez na história!</p>
@@ -13,12 +13,17 @@
       um gostinho do que nos aguarda!
     </div>
     <div class="div3">
-      <mat-card>
-        Prencha seu nome:
-        <br>
-        <input matInput placeholnder="Preencha seu nome">
 
-        <button mat-raised-button color="primary" routerLink="/quiz">Iniciar Quiz</button>
+
+      <mat-card>
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Informe seu nome</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <br>
+          <button mat-raised-button color="primary" routerLink="/quiz">Iniciar Quiz</button>
+        </form>
       </mat-card>
     </div>
   </div>
