@@ -17,7 +17,7 @@
     </mat-card-content>
     <mat-card-actions>
       <div id="ButtonQuiz">
-        <button (click)="VerificaResposta()" mat-raised-button color="primary">Confirmar</button>
+        <button (click)="VerificaResposta()" mat-raised-button color="primary" *ngIf="Checkado">Confirmar</button>
       </div>
     </mat-card-actions>
   </mat-card>

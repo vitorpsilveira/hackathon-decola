@@ -21,6 +21,8 @@ export class ExemploComponent implements OnInit {
   Posicao: Number;
   Prata: Number;
 
+  Checkado:boolean = true;
+
   constructor(public apiResultados: CardQuizService) {}
 
   ngOnInit(): void {
@@ -39,6 +41,7 @@ export class ExemploComponent implements OnInit {
   }
 
   public VerificaResposta() {
+    this.Checkado = false;
     if (this.Resposta == this.Ouro) {
       this.apiResultados.acertos ++
     }
