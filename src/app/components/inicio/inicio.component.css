@@ -1,12 +1,20 @@
 #q1 div {
+  margin: 5px;
     text-align: center;
     height: 30vh;
     font-family: Verdana;
 }
 
 .div1 {
+  display: flex;
   font-size: 24px;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('https://logodownload.org/wp-content/uploads/2020/03/olimpiada-olympic-games-logo.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
+
 
 .div1 p{
   font-family: 'Times New Roman';
@@ -15,7 +23,7 @@
 }
 
 .div2 {
-   margin: 5px;
+
 }
 
 .div2 p {
@@ -23,5 +31,11 @@
 }
 
 .div3 {
+}
 
+.div3 mat-card {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
