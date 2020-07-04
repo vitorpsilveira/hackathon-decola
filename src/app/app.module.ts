@@ -20,13 +20,9 @@ import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import {MatRadioModule} from '@angular/material/radio';
-<<<<<<< HEAD
 import { QuizPageComponent } from './components/quiz-page/quiz-page.component';
-=======
 import { InicioComponent } from './components/inicio/inicio.component';
-import { EsportesPageComponent } from './components/esportes-page/esportes-page.component';
 import {MatInputModule} from '@angular/material/input';
->>>>>>> 0f87ec97a156e8e2b7777f67414fa5065ea2c1ef
 
 registerLocaleData(localePt, 'pt-BR');
 
@@ -36,12 +32,8 @@ registerLocaleData(localePt, 'pt-BR');
     MenuPagLayoutComponent,
     ExemploComponent,
     SobrePageComponent,
-<<<<<<< HEAD
-    QuizPageComponent
-=======
-    EsportesPageComponent,
+    QuizPageComponent,
     InicioComponent
->>>>>>> 0f87ec97a156e8e2b7777f67414fa5065ea2c1ef
   ],
   imports: [
     BrowserModule,
@@ -58,6 +50,7 @@ registerLocaleData(localePt, 'pt-BR');
     HttpClientModule,
     MatCardModule,
     MatRadioModule,
+    MatIconModule,
     MatInputModule
   ],
   providers:  [{provide: LOCALE_ID, useValue: 'pt-BR'}],

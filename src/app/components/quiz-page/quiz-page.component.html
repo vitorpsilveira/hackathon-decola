@@ -1,1 +1,1 @@
-<app-exemplo [cardquiz]="listaquiz[numerosAleatorios()]"></app-exemplo>
+<app-exemplo *ngFor="let item of listaquiz" [cardquiz]="item"></app-exemplo>

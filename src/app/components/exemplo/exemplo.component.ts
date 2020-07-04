@@ -53,4 +53,9 @@ export class ExemploComponent implements OnInit {
     }
     this.seasons.push(this.Ouro);
   }
+
+  public EscolherMedalha(){
+      var c = this.randomInt(0, 100);
+      return c;
+  }
 }
