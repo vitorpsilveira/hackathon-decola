@@ -21,7 +21,7 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import {MatRadioModule} from '@angular/material/radio';
 import { InicioComponent } from './components/inicio/inicio.component';
-
+import { EsportesPageComponent } from './components/esportes-page/esportes-page.component';
 
 registerLocaleData(localePt, 'pt-BR');
 
@@ -31,6 +31,7 @@ registerLocaleData(localePt, 'pt-BR');
     MenuPagLayoutComponent,
     ExemploComponent,
     SobrePageComponent,
+    EsportesPageComponent,
     InicioComponent
   ],
   imports: [
