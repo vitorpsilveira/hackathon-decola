@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { CardQuiz } from "src/app/Services/card-quiz";
 import { CardQuizService } from "src/app/Services/card-quiz.service";
+import { InicioComponent } from '../inicio/inicio.component';
 
 @Component({
   selector: "app-exemplo",
@@ -20,7 +21,7 @@ export class ExemploComponent implements OnInit {
   Posicao: Number;
   Prata: Number;
 
-  constructor() {}
+  constructor(public apiResultados: CardQuizService) {}
 
   ngOnInit(): void {
     console.log(this.cardquiz);
@@ -39,6 +40,10 @@ export class ExemploComponent implements OnInit {
   public VerificaResposta() {
     if (this.Resposta == this.Ouro) {
       alert("Resposta certa");
+      this.apiResultados.acertos ++
+    }
+    else {
+      this.apiResultados.erros ++
     }
   }
 

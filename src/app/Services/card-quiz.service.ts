@@ -8,6 +8,10 @@ import { Observable } from 'rxjs';
 })
 export class CardQuizService {
 
+  nome:string = '';
+  acertos: number = 0;
+  erros: number = 0;
+
   constructor(private httpClient: HttpClient) {}
 
     public List():Observable<CardQuiz[]>{
