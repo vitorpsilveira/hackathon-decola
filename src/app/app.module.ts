@@ -20,6 +20,8 @@ import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 
+import { NatacaoPageComponent } from './components/natacao-page/natacao-page.component';
+
 registerLocaleData(localePt, 'pt-BR');
 
 @NgModule({
@@ -27,7 +29,8 @@ registerLocaleData(localePt, 'pt-BR');
     AppComponent,
     MenuPagLayoutComponent,
     ExemploComponent,
-    SobrePageComponent
+    SobrePageComponent,
+    NatacaoPageComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,8 @@ registerLocaleData(localePt, 'pt-BR');
     FormsModule,
     HttpClientModule,
     MatCardModule
+
+
   ],
   providers:  [{provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
