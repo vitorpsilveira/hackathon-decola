@@ -5,19 +5,11 @@
       <mat-card-title>{{Pais}}</mat-card-title>
       <mat-card-subtitle></mat-card-subtitle>
     </mat-card-header>
-<<<<<<< HEAD
       <img mat-card-image [src]="Bandeira" alt="Photo of a Shiba Inu">
     <mat-card-content>
-      <label id="example-radio-group-label">Quantas medalhas de {{Medalhas[EscolherMedalha()]}} o {{Pais}} obteve nas
+      <label id="example-radio-group-label">Quantas medalhas de Ouro o {{Pais}} obteve nas
         olimpadas?</label>
       <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="Resposta">
-=======
-    <img mat-card-image [src]="Bandeira" alt="Bandeira">
-    <mat-card-content>
-      <label id="example-radio-group-label">Quantas medalhas de Ouro o {{Pais}} obteve nas olimpadas?</label>
-      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
-        [(ngModel)]="Resposta">
->>>>>>> 2f1581d48288282df19e94ed3b12f3f3039fcc40
         <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
           {{season}}
         </mat-radio-button>
