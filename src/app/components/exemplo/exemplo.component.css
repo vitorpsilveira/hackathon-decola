@@ -6,6 +6,7 @@
   margin-left: 5%;
   margin-top: 2%;
   max-width: 100%;
+<<<<<<< HEAD
   width: 90%;
   padding: 2px;
 }
@@ -15,6 +16,10 @@
   width: 100%;
   border-style:solid;
   border-width: 1px;
+=======
+  width: 50%;
+  background-color: black;
+>>>>>>> 2f1581d48288282df19e94ed3b12f3f3039fcc40
 }
 
 .example-radio-group {

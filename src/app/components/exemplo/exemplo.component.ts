@@ -11,7 +11,6 @@ import { InicioComponent } from '../inicio/inicio.component';
 export class ExemploComponent implements OnInit {
   Resposta: any;
   seasons: any[]=[];
-  Medalhas: String[]=['this.Ouro','this.Prata','this.Bronze'];
 
   @Input() cardquiz: CardQuiz;
 
@@ -35,6 +34,7 @@ export class ExemploComponent implements OnInit {
       this.Prata = this.cardquiz.Prata;
     }
     this.numerosAleatorios();
+    this.seasons.sort();
   }
 
   public VerificaResposta() {
@@ -60,7 +60,7 @@ export class ExemploComponent implements OnInit {
   }
 
   public EscolherMedalha(){
-      var c = this.randomInt(0, 100);
+      var c = this.randomInt(0, 2);
       return c;
   }
 }

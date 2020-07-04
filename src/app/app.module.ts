@@ -25,8 +25,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import {MatInputModule} from '@angular/material/input';
 import { EsportesCardComponent } from './components/esportes-card/esportes-card.component';
 import { EsportesPageComponent } from './components/esportes-page/esportes-page.component';
-
-
+import {MatDividerModule} from '@angular/material/divider';
+import { RankingComponent } from './components/ranking/ranking.component';
 
 registerLocaleData(localePt, 'pt-BR');
 
@@ -39,7 +39,8 @@ registerLocaleData(localePt, 'pt-BR');
     EsportesCardComponent,
     QuizPageComponent,
     InicioComponent,
-    EsportesPageComponent
+    EsportesPageComponent,
+    RankingComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +58,8 @@ registerLocaleData(localePt, 'pt-BR');
     MatCardModule,
     MatRadioModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatDividerModule
   ],
   providers:  [{provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
