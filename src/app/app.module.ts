@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import {MatRadioModule} from '@angular/material/radio';
 
 import { NatacaoPageComponent } from './components/natacao-page/natacao-page.component';
 
@@ -45,9 +46,8 @@ registerLocaleData(localePt, 'pt-BR');
     // extra
     FormsModule,
     HttpClientModule,
-    MatCardModule
-
-
+    MatCardModule,
+    MatRadioModule
   ],
   providers:  [{provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]

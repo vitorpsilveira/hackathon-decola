@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExemploComponent implements OnInit {
 
+  favoriteSeason: string;
+  seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn'];
+
   constructor() { }
 
   ngOnInit(): void {
