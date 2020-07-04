@@ -23,6 +23,9 @@ import {MatRadioModule} from '@angular/material/radio';
 import { QuizPageComponent } from './components/quiz-page/quiz-page.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import {MatInputModule} from '@angular/material/input';
+import { EsportesCardComponent } from './components/esportes-card/esportes-card.component';
+import { EsportesPageComponent } from './components/esportes-page/esportes-page.component';
+
 
 
 registerLocaleData(localePt, 'pt-BR');
@@ -33,8 +36,10 @@ registerLocaleData(localePt, 'pt-BR');
     MenuPagLayoutComponent,
     ExemploComponent,
     SobrePageComponent,
+    EsportesCardComponent,
     QuizPageComponent,
-    InicioComponent
+    InicioComponent,
+    EsportesPageComponent
   ],
   imports: [
     BrowserModule,
