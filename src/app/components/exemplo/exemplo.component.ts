@@ -33,6 +33,7 @@ export class ExemploComponent implements OnInit {
       this.Pais = this.cardquiz.Pais;
       this.Posicao = this.cardquiz.Posicao;
       this.Prata = this.cardquiz.Prata;
+      this.apiResultados.nome ;
     }
     this.numerosAleatorios();
   }
@@ -46,6 +47,11 @@ export class ExemploComponent implements OnInit {
       this.apiResultados.erros ++
     }
   }
+
+  public FinalizaQuiz() {
+      alert("Quiz Encerrado: " + this.apiResultados.nome);
+    }
+
 
   public randomInt(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
