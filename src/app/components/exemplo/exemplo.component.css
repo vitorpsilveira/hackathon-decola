@@ -2,13 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-right: 25%;
-  margin-left: 25%;
+  margin-right: 5%;
+  margin-left: 5%;
   margin-top: 2%;
-
   max-width: 100%;
-  width: 50%;
+  width: 90%;
+}
+
+img {
+  border-style:solid;
 }
 
 .example-radio-group {
